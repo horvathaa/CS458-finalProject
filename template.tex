@@ -183,10 +183,22 @@ description to represent the use case of visualizing a character from a novel or
 \subsection{Background}
 \subsubsection{Algorithm}
 \noindent Body Talk was developed by a group of researchers at the Max-Planck Institute for Intelligent Systems. The authors originally ran a series
-of studies using Amazon Turks to evaluate a series of 17 photographs on how much they corresponded to a set of descriptive words. \
+of studies using Amazon Turk to evaluate a series of 17 photographs on how much they corresponded to a set of descriptive words. \
+\begin{figure}[h]
+	\includegraphics[width=\columnwidth]{survey}
+	\caption{Survey on Amazon MTurk}
+\end{figure}
+Using this crowdsourcing, attribute ratings are generated based off of standard linguistic descriptions of 3D shape. In total, the survey was able to gather 15 ratings for each word descriptor over a total of 256 bodies(128 Male, 128 Female). The next major step was to generate a linear function that relates the ratings of the words to the 3D model. Additionally some descriptors are correlated meaning that words like "skinny" and "petite" should influence each other. The algorithm takes this into account by adjusting these particular ratings by their standard deviation, and conditioning for a vector that is used in the 3D model.
+
+% need to add space here
+
+\begin{figure}[h]
+	\includegraphics[width=\columnwidth]{algo}
+	\caption{Linear function created from dataset}
+\end{figure}
 
 
-\subsubsection{Body Talk Websit}
+\subsubsection{Body Talk Website}
 \noindent 
 The website allows for the user to
 manipulate sliders corresponding to different words that may
@@ -194,7 +206,8 @@ manipulate sliders corresponding to different words that may
 
 
 \section{Related Work}
-
+CESAR Dataset
+Will add links from last paper...
 \section{Methodology}
 
 \section{Results}
