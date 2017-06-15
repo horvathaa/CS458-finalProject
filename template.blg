@@ -1,89 +1,45 @@
-This is BibTeX, Version 0.99d (TeX Live 2016)
-Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
-The top-level auxiliary file: template.aux
+This is BibTeX, Version 0.99dThe top-level auxiliary file: template.aux
 The style file: abbrv-doi.bst
-Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: template.bib
 Too many commas in name 1 of "Stephan Streuber, M. Alejandra Quiros-Ramirez, Matthew Q. Hill, Carina A. Hahn, Silvia Zuffi, Alice O'Toole, & Michael J. Black" for entry Streuber:2016:SIGGRAPH
-while executing---line 2471 of file abbrv-doi.bst
+while executing---line 1236 of file abbrv-doi.bst
 Too many commas in name 1 of "Stephan Streuber, M. Alejandra Quiros-Ramirez, Matthew Q. Hill, Carina A. Hahn, Silvia Zuffi, Alice O'Toole, & Michael J. Black" for entry Streuber:2016:SIGGRAPH
-while executing---line 2471 of file abbrv-doi.bst
+while executing---line 1236 of file abbrv-doi.bst
 Too many commas in name 1 of "Stephan Streuber, M. Alejandra Quiros-Ramirez, Matthew Q. Hill, Carina A. Hahn, Silvia Zuffi, Alice O'Toole, & Michael J. Black" for entry Streuber:2016:SIGGRAPH
-while executing---line 2471 of file abbrv-doi.bst
+while executing---line 1236 of file abbrv-doi.bst
 Too many commas in name 1 of "Stephan Streuber, M. Alejandra Quiros-Ramirez, Matthew Q. Hill, Carina A. Hahn, Silvia Zuffi, Alice O'Toole, & Michael J. Black" for entry Streuber:2016:SIGGRAPH
-while executing---line 2471 of file abbrv-doi.bst
+while executing---line 1236 of file abbrv-doi.bst
 Warning--to sort, need author or key in bodytalk:website
 Name 1 in "Hill, M. Q., Streuber, S., Hahn, C. A., Black, M. J., and O'Toole, A. J." has a comma at the end for entry Hill:15
-while executing---line 2471 of file abbrv-doi.bst
+while executing---line 1236 of file abbrv-doi.bst
 Too many commas in name 1 of "Hill, M. Q., Streuber, S., Hahn, C. A., Black, M. J., and O'Toole, A. J." for entry Hill:15
-while executing---line 2471 of file abbrv-doi.bst
+while executing---line 1236 of file abbrv-doi.bst
 Too many commas in name 1 of "Hill, M. Q., Streuber, S., Hahn, C. A., Black, M. J., and O'Toole, A. J." for entry Hill:15
-while executing---line 2471 of file abbrv-doi.bst
+while executing---line 1236 of file abbrv-doi.bst
 Too many commas in name 1 of "Hill, M. Q., Streuber, S., Hahn, C. A., Black, M. J., and O'Toole, A. J." for entry Hill:15
-while executing---line 2471 of file abbrv-doi.bst
+while executing---line 1236 of file abbrv-doi.bst
 Too many commas in name 1 of "Hill, M. Q., Streuber, S., Hahn, C. A., Black, M. J., and O'Toole, A. J." for entry Hill:15
-while executing---line 2471 of file abbrv-doi.bst
+while executing---line 1236 of file abbrv-doi.bst
 Too many commas in name 1 of "Hill, M. Q., Streuber, S., Hahn, C. A., Black, M. J., and O'Toole, A. J." for entry Hill:15
-while executing---line 2471 of file abbrv-doi.bst
+while executing---line 1236 of file abbrv-doi.bst
 Name 1 in "Hill, M. Q., Streuber, S., Hahn, C. A., Black, M. J., and O'Toole, A. J." has a comma at the end for entry Hill:15
-while executing---line 2555 of file abbrv-doi.bst
+while executing---line 1278 of file abbrv-doi.bst
 Too many commas in name 1 of "Hill, M. Q., Streuber, S., Hahn, C. A., Black, M. J., and O'Toole, A. J." for entry Hill:15
-while executing---line 2555 of file abbrv-doi.bst
+while executing---line 1278 of file abbrv-doi.bst
 Too many commas in name 1 of "Hill, M. Q., Streuber, S., Hahn, C. A., Black, M. J., and O'Toole, A. J." for entry Hill:15
-while executing---line 2555 of file abbrv-doi.bst
+while executing---line 1278 of file abbrv-doi.bst
 Too many commas in name 1 of "Hill, M. Q., Streuber, S., Hahn, C. A., Black, M. J., and O'Toole, A. J." for entry Hill:15
-while executing---line 2555 of file abbrv-doi.bst
+while executing---line 1278 of file abbrv-doi.bst
 Too many commas in name 1 of "Hill, M. Q., Streuber, S., Hahn, C. A., Black, M. J., and O'Toole, A. J." for entry Hill:15
-while executing---line 2555 of file abbrv-doi.bst
+while executing---line 1278 of file abbrv-doi.bst
 Too many commas in name 1 of "Hill, M. Q., Streuber, S., Hahn, C. A., Black, M. J., and O'Toole, A. J." for entry Hill:15
-while executing---line 2555 of file abbrv-doi.bst
+while executing---line 1278 of file abbrv-doi.bst
 Too many commas in name 1 of "Stephan Streuber, M. Alejandra Quiros-Ramirez, Matthew Q. Hill, Carina A. Hahn, Silvia Zuffi, Alice O'Toole, & Michael J. Black" for entry Streuber:2016:SIGGRAPH
-while executing---line 2555 of file abbrv-doi.bst
+while executing---line 1278 of file abbrv-doi.bst
 Too many commas in name 1 of "Stephan Streuber, M. Alejandra Quiros-Ramirez, Matthew Q. Hill, Carina A. Hahn, Silvia Zuffi, Alice O'Toole, & Michael J. Black" for entry Streuber:2016:SIGGRAPH
-while executing---line 2555 of file abbrv-doi.bst
+while executing---line 1278 of file abbrv-doi.bst
 Too many commas in name 1 of "Stephan Streuber, M. Alejandra Quiros-Ramirez, Matthew Q. Hill, Carina A. Hahn, Silvia Zuffi, Alice O'Toole, & Michael J. Black" for entry Streuber:2016:SIGGRAPH
-while executing---line 2555 of file abbrv-doi.bst
+while executing---line 1278 of file abbrv-doi.bst
 Too many commas in name 1 of "Stephan Streuber, M. Alejandra Quiros-Ramirez, Matthew Q. Hill, Carina A. Hahn, Silvia Zuffi, Alice O'Toole, & Michael J. Black" for entry Streuber:2016:SIGGRAPH
-while executing---line 2555 of file abbrv-doi.bst
-You've used 9 entries,
-            2598 wiz_defined-function locations,
-            658 strings with 6172 characters,
-and the built_in function-call counts, 5711 in all, are:
-= -- 1164
-> -- 138
-< -- 172
-+ -- 231
-- -- 50
-* -- 217
-:= -- 857
-add.period$ -- 29
-call.type$ -- 9
-change.case$ -- 50
-chr.to.int$ -- 0
-cite$ -- 10
-duplicate$ -- 100
-empty$ -- 211
-format.name$ -- 46
-if$ -- 1464
-int.to.chr$ -- 0
-int.to.str$ -- 9
-missing$ -- 8
-newline$ -- 70
-num.names$ -- 16
-pop$ -- 46
-preamble$ -- 1
-purify$ -- 41
-quote$ -- 0
-skip$ -- 77
-stack$ -- 0
-substring$ -- 297
-swap$ -- 16
-text.length$ -- 97
-text.prefix$ -- 0
-top$ -- 0
-type$ -- 36
-warning$ -- 1
-while$ -- 31
-width$ -- 10
-write$ -- 207
+while executing---line 1278 of file abbrv-doi.bst
 (There were 20 error messages)
