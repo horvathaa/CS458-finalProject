@@ -100,7 +100,7 @@
 accurately create the human body they are attempting to visualize. In our evaluation of the BodyTalk model creation software, we found
 that all our 7 participants were able to create a model of themselves they felt accurately represented their body shape. Furthermore,
 participants also were able to make models that matched a textual description provided during the study. In conclusion, we found that
-the BodyTalk software is usable and successful in creating human shaped models and succeeded in bypassing the "uncanny valley" 
+the BodyTalk software is usable and successful in creating human shaped models and succeeded in bypassing the "uncanny valley"
 effect.
 } % end of abstract
 
@@ -108,7 +108,7 @@ effect.
 %% please capitalize first letter and insert punctuation after last keyword
 %% \keywords{Radiosity, global illumination, constant time}
 
-%% ACM Computing Classification System (CCS). 
+%% ACM Computing Classification System (CCS).
 %% See <http://www.acm.org/class/1998/> for details.
 %% The ``\CCScat'' command takes four arguments.
 
@@ -150,8 +150,8 @@ effect.
 \maketitle
 
 %% \section{Introduction} %for journal use above \firstsection{..} instead
-\noindent Currently, creating 3D visualizations of human bodies is very limited. The only software readily available are expensive 3D body scanners, 
-which are restricted to specialized set ups and hard for the average consumer to access or character creators in video games, which are restricted to 
+\noindent Currently, creating 3D visualizations of human bodies is very limited. The only software readily available are expensive 3D body scanners,
+which are restricted to specialized set ups and hard for the average consumer to access or character creators in video games, which are restricted to
 those game worlds. With computers becoming more powerful every year and more capable of producing and rendering 3D models, more specialized 3D modeling
 software that is not restricted to experts could prove useful. \newline
 
@@ -159,7 +159,7 @@ software that is not restricted to experts could prove useful. \newline
 of avatar creation. Avatars are commonly used in 2D applications to provide a visual representation of ones self to the other users of the application.
 However, while most hardware allows for the usage of 3D modeling, there is little applications making use of 3D models as avatars. This could be useful
 in applications such as teleconferencing where a visual representation of the person talking may allow for a higher level of engagement with the
-conversation. Furthermore, 3D avatars have been shown to be successful as mediums for online therapy rooms as they allow for high engagement
+conversation. Furthermore, 3D avatars have been shown to be successful in mediums such as online therapy rooms as they allow for high engagement
 and empathy between the caretaker and the participant\cite{Rijn:2015:BJGC}. An important aspect of these avatar-based systems is that they rely
 heavily upon identification with the avatar that is created. In order for a person to gain the benefits of empathy and engagement through avatars,
 they must see themselves be represented through the avatar\cite{Belisle:2010:PM}. \newline
@@ -172,8 +172,8 @@ a body shape, Streuber et al. created Body Talk\cite{Streuber:2016:SIGGRAPH}. Us
 in the field of criminology when using victim and witness testimonies to try and find a culprit during a case. Text-based descriptions may
 also be used when attempting to visualize characters from novels or other text-based mediums. \newline
 
-\noindent Body Talk allows for the creation of 3D models on a website\cite{bodytalk:website} with word descriptor sliders being used to change the 
-dimensions 
+\noindent Body Talk allows for the creation of 3D models on a website\cite{bodytalk:website} with word descriptor sliders being used to change the
+dimensions
 and shape of the 3D model. However, Streuber et al. did not evaluate the effectiveness of the model's created despite the author's intended goal
 of having these new visualizations be used in other applications by users. In our study, our participants attempted to create models using
 the Body Talk website that they felt represented themselves. We are interested in whether these visualizations accurately represent themselves
@@ -188,10 +188,10 @@ of studies using Amazon Turk to evaluate a series of 17 photographs on how much 
 	\includegraphics[width=\columnwidth]{survey}
 	\caption{Survey on Amazon MTurk}
 \end{figure}
-Using this crowdsourcing, attribute ratings are generated based off of standard linguistic descriptions of 3D shape. In total, the 
-survey was able to gather 15 ratings for each word descriptor over a total of 256 bodies(128 Male, 128 Female). The next major step was 
-to generate a linear function that relates the ratings of the words to the 3D model. Additionally some descriptors are correlated 
-meaning that words like "skinny" and "petite" should influence each other. The algorithm takes this into account by adjusting these 
+Using this crowdsourcing, attribute ratings are generated based off of standard linguistic descriptions of 3D shape. In total, the
+survey was able to gather 15 ratings for each word descriptor over a total of 256 bodies(128 Male, 128 Female). The next major step was
+to generate a linear function that relates the ratings of the words to the 3D model. Additionally some descriptors are correlated
+meaning that words like "skinny" and "petite" should influence each other. The algorithm takes this into account by adjusting these
 particular ratings by their standard deviation, and conditioning for a vector that is used in the 3D model.
 
 
@@ -201,101 +201,140 @@ particular ratings by their standard deviation, and conditioning for a vector th
 \end{figure}
 
 \subsubsection{Body Talk Website}
-\noindent The website allows for the user to manipulate sliders corresponding to different words that may be used to describe a person. 
-\begin{figure} [!htb] 
+\noindent The website allows for the user to manipulate sliders corresponding to different words that may be used to describe a person.
+\begin{figure} [!htb]
  \centering
   \includegraphics[width=\linewidth]{websiteUI}
-  \caption{A screenshot of the Body Talk website. (1) shows the Word Descriptor sliders; (2) shows the model generated by the current configuration of 
+  \caption{A screenshot of the Body Talk website. (1) shows the Word Descriptor sliders; (2) shows the model generated by the current configuration of
   the sliders; (3) shows the outputted word cloud generated based upon the current configuration of sliders}
   \label{fig:websiteUI}
 \end{figure}
-These 30 words were selected via previous research done by Hill et al.\cite{Hill:15}. Figure \ref{fig:websiteUI} shows what the Body Talk website 
-looks like to a user. 
+These 30 words were selected via previous research done by Hill et al.\cite{Hill:15}. Figure \ref{fig:websiteUI} shows what the Body Talk website
+looks like to a user.
 The sliders under Figure \ref{fig:websiteUI}.1 show the various word descriptors. Note that some of these word descriptors are paired, i.e.
 if a user slides the "Big" slider to the right, the system will automatically slide sliders such as "Small" to the left or "Heavyset" to the right
 to prevent the creation of unrealistic body models. This "enforced word correlation" may be turned off, but, since we were partially
 evaluating the effectiveness of enforced word correlation through our creation of models using purely text-based descriptions, we did not inform our
-participants of the existence of this slider during the course of the task. After every change in the slider's values, the model shown in Figure 
-\ref{fig:websiteUI}.2 is updated. While the model is automatically generated with the change of a slider's value, the word cloud seen in Figure 
+participants of the existence of this slider during the course of the task. After every change in the slider's values, the model shown in Figure
+\ref{fig:websiteUI}.2 is updated. While the model is automatically generated with the change of a slider's value, the word cloud seen in Figure
 \ref{fig:websiteUI}.3 is also updated. These words should match how a person would describe this model's body shape. They can also be used as a way
 to validate a textual description provided of a person.
 
 
 \section{Related Work}
-BodyTalk gained inspiration from a number of different related projects. BodyTalk uses the CESAR dataset, a publicly available statistical model from 2002, as the basis for 3D human models. The dataset manifests itself in this project as the sliders on the website that adjust sets of parameters in the 3D models. In addition to the CESAR body model, the project was also influenced by major theories in Psychology such as somatotyping and some modern studies that reached similar conclusions-that language can provide powerful translations to 3D body shape.
+\noindent BodyTalk gained inspiration from a number of different related projects. BodyTalk uses the CESAR dataset, a publicly available statistical model from 2002, as the basis for 3D human models. The dataset manifests itself in this project as the sliders on the website that adjust sets of parameters in the 3D models. In addition to the CESAR body model, the project was also influenced by major theories in Psychology such as somatotyping and some modern studies that reached similar conclusions-that language can provide powerful translations to 3D body shape.
+
+\noindent In addition to the work that inspired the original Body Talk paper, we found multiple articles that helped motivate the work
+we wanted to do. One such work is Belisle et al. who investigated how avatars can increase and raise motivation\cite{Belisle:2010:PM}.
+These avatars were 2D models that represented users in an online setting, which is similar to how the Body Talk avatars would be used.
+However, it is yet unknown whether engagement levels differ between tradition 2D avatars and 3D avatars. This is an avenue of research
+that relates to the Body Talk work as these models may not be useful in online settings if they can't relate the same way as they
+do with simpler, cartoonish 2D avatars. While Rijn et al. found success within their online therapy setting, it is yet
+unknown if this can transfer outside of a medium as sensitive and vulnerable as an online therapy group\cite{Rijn:2015:BJGC}.
+This is one of the reasons why our work is important, in that it examines whether
+our participants were able to identify at all with the 3D models they created in a setting that does not directly promote
+high levels of engagement and vulnerability.
+
+
 
 \section{Methodology}
 \noindent In order to determine whether Body Talk is practical in other 3D applications, user studies were performed using different participants. Each participant was a student from Oregon State University. Seven students volunteered to do these user studies in total. \newline \newline
 \noindent The student for a test was first told to generate a 3D model using Body Talk that they thought most closely represented themselves. They were given as much time as needed to generate this model. After they were done, they rated the model on a 1 to 5 scale on how closely they thought the model represented them. Following this, they were asked different questions including "What about this model is similar to you? What parts are different?", "What other features would you like to see?", and "Would you use this model in other 3D model applications?".\newline \newline
 \noindent After these questions were answered, the student moved on to the second part of the test. They were given a text description of a persons body type that was already previously generated before (using Body Talk). The model the student creates is then compared to the actual correct model. This told us if Body Talk is viable in generating body types based off written descriptions. \newline\newline
-\noindent Lastly, all the results are collected and averaged to determine if Body Talk is a viable application.  
+\noindent Lastly, all the results are collected and averaged to determine if Body Talk is a viable application.
 
 
 \section{Results}
 
-\noindent Data was gathered from the user studies to determine whether Body Talk would be viable in other applications. All 7 Oregon State University 
-students who took part in these user studies were able to make models they felt accurately depicted their body shape. On a 1 to 5 scale, the average 
-student gave their generated model a 4 on how closely the model resembled them. These results show that Body Talk could indeed be useful in generating 
+\noindent Data was gathered from the user studies to determine whether Body Talk would be viable in other applications. All 7 Oregon State University
+students who took part in these user studies were able to make models they felt accurately depicted their body shape. On a 1 to 5 scale, the average
+student gave their generated model a 4 on how closely the model resembled them. These results show that Body Talk could indeed be useful in generating
 realistic body types from words (students used sliders for each word in the interface). \newline
 \begin{figure}[!htb]
 	\includegraphics[width=\columnwidth]{user_self_creation.png}
 	\caption{This figure shows a model created by a participant. This model is generated during the first part of the study where the participant is asked to create a model of themselves.}
 \end{figure}
-\noindent However, aside from these impressive stats, the students gave the word descriptions generated from their models a 3.6 out of 5 
-on whether  they 
-believed the words described their body types accurately. This score is okay but not great like the previous score. This is no surprise 
-because Body Talk 
-generated around 6 - 16 words for different models. With that many body type descriptions generated, there is bound to by some words 
-that a students just 
-wont agree with. Rightfully so, some of the word traits would probably not match their body types at all. Aside from Body Talk 
-generating inaccurate body 
-type word descriptions, it also generated very accurate ones as well. This would result in a higher score for this test. But just 
-because a student gives 
-a high score, it doesn't mean that it is accurate data. For example, a student may get a "fit" word description generated by Body Talk 
-based off the 
-model the student made of themselves. Even if the person really isn't fit, the student may like to see this trait anyways. Because the 
-program gave them 
-a positive trait, they will give the test a higher score resulting in inaccurate data. The same thing can happen the other way around. A 
-student may find 
-a bad trait that may be true but they don't like, so they give the test a lower score than it should be. All these factors most likely 
-played a factor in 
-the user tests which led to a passable average score. Out of the 7 students, 4 of them said they would use their model in other 3D 
-applications. This in no way proves that Body Talk is applicable in other applications. It was a hit or miss in the experiments. 
-However, most students felt confident about the model they created. Though not all the students seemed to think Body Talk is useful, 
+\noindent However, aside from these impressive stats, the students gave the word descriptions generated from their models a 3.6 out of 5
+on whether  they
+believed the words described their body types accurately. This score is okay but not great like the previous score. This is no surprise
+because Body Talk
+generated around 6 - 16 words for different models. With that many body type descriptions generated, there is bound to by some words
+that a students just
+wont agree with. Rightfully so, some of the word traits would probably not match their body types at all. Aside from Body Talk
+generating inaccurate body
+type word descriptions, it also generated very accurate ones as well. This would result in a higher score for this test. But just
+because a student gives
+a high score, it doesn't mean that it is accurate data. For example, a student may get a "fit" word description generated by Body Talk
+based off the
+model the student made of themselves. Even if the person really isn't fit, the student may like to see this trait anyways. Because the
+program gave them
+a positive trait, they will give the test a higher score resulting in inaccurate data. The same thing can happen the other way around. A
+student may find
+a bad trait that may be true but they don't like, so they give the test a lower score than it should be. All these factors most likely
+played a factor in
+the user tests which led to a passable average score. Out of the 7 students, 4 of them said they would use their model in other 3D
+applications. This in no way proves that Body Talk is applicable in other applications. It was a hit or miss in the experiments.
+However, most students felt confident about the model they created. Though not all the students seemed to think Body Talk is useful,
 most students generally agreed that its model generation was pretty accurate. \newline
 
-\noindent       
+Due to time constraints, we did not thoroughly analyze the models created during the second part of the task where participants
+were asked to create models based purely upon a given text description. However, from a preliminary analysis, most participants were
+able to create a model that resembled the model created by the algorithm. This suggests that this method of creating models based purely
+upon text description may be a reasonable approach for representing bodies that cannot be visualized otherwise (i.e. book characters).
+
+\noindent
 
 \section{Future Work}
 
-Can include improvements to user studies (ex. set time, more participants, more generated models, more tests) 
-
-\noindent Future work to determine whether Body Talk is useful in other 3D applications is critical. Aside from just getting more data, 
-previous user studies had some flaws that should be fixed. 
+\noindent Future work to determine whether Body Talk is useful in other 3D applications is critical. Aside from just getting more data,
+previous user studies had some flaws that should be fixed.
 \newline \newline
-\noindent For example, no set period of time was given for each student to complete the study. This resulted in some students spending 
-way more time on tests than others. In turn, usually the students who spent more time on the tests generated models far more accurate 
-than the ones that spent less time. Future studies will include set time limits to which each participant must complete. 
+\noindent For example, no set period of time was given for each student to complete the study. This resulted in some students spending
+way more time on tests than others. In turn, usually the students who spent more time on the tests generated models far more accurate
+than the ones that spent less time. Future studies will include set time limits to which each participant must complete.
 \newline\newline
-\noindent Another limitation of the previous user studies was having no set way to do each test. For example, some students may have 
-done the test face to face. Some may have just gotten an email with all the necessary information to do the tests on their own. Some 
-students may have used a small laptop with a touch screen while others used a computer with a large monitor. All user studies in the 
-future will be done face to face in order to monitor time and the student taking the test. Studies will also include a set computer with 
-a large monitor and working mouse. User using a small screen could not see all the sliders well. They were also having trouble adjusting 
-sliders on a touch screen. This led to frustration which led to worst results which Body Talk is not responsible for. 
+\noindent Another limitation of the previous user studies was having no set way to do each test. For example, some students may have
+done the test face to face. Some may have just gotten an email with all the necessary information to do the tests on their own. Some
+students may have used a small laptop with a touch screen while others used a computer with a large monitor. All user studies in the
+future will be done face to face in order to monitor time and the student taking the test. Studies will also include a set computer with
+a large monitor and working mouse. User using a small screen could not see all the sliders well. They were also having trouble adjusting
+sliders on a touch screen. This led to frustration which led to worst results which Body Talk is not responsible for.
 \newline\newline
-\noindent Aside from these limitations, getting more data and participants would give a more accurate understanding on whether Body Talk 
-is practical in other fields. Future studies will include more students participating in the user studies and students creating more 
-models than just the two.  
-  
+\noindent Aside from these limitations, getting more data and participants would give a more accurate understanding on whether Body Talk
+is practical in other fields. Future studies will include more students participating in the user studies and students creating more
+models than just the two.
 
-
-
+\noindent As for the Body Talk software generator itself, a common feedback we received from participants we got was that they found
+the sliders confusing and unintuitive. While they understood the concept of sliding a slider from small to large, they were less
+enthused about the other sliders moving along to enforce word correlation. Body Talk currently supports turning this enforced
+word correlation off, but this can result in the creation of unrealistic body shapes if two opposing sliders are both slid together.
+Perhaps the tool may, in the future, support a "closer detail" view where users can zoom in and directly manipulate the parts of the
+body they want to alter to create a 3D model that looks more like them.
+\newline\newline
+\noindent
+Another suggestion participants had was allowing for more customization options for aesthetic details of the model. They wanted to
+add things such as hair or clothing to the model to allow it to look more like themselves. This is supported by Belisle
+\cite{Belisle:2010:PM} who found that participants relied greatly upon representation of their personality to convey information
+to others and for others to gain information about them\cite{WDMAS}. Supporting the ability to add more indivuality to each model
+generated would enhance user's ability to relate to and identify with their created avatar and may increase the amount of
+participants that would agree to use the model in a different application.
+\newline\newline
+\noindent In the future, we would also like to analyze the data received during the second portion of our task, where participants
+were given a text description and asked to make a 3D model that accurately represented that text-based description. In
+preliminary analysis, it appears that most participants were able to create models that matched the algorithm's representation of the
+body shape. While no claims may be made yet, this provides exciting evidence that text based descriptions may be a viable way of
+creating 3D models.
 
 \section{Conclusion}
-
-BODY TALK CONCLUSION 
-
+Widespread 3D modeling software is a new and exciting field with innovative and novel tools being created and adopted. Body Talk
+fits into this paradigm by allowing for the creation of human-shaped models by manipulating sliders to create a model not
+based upon high-level understanding of vectors and meshes but of understanding how words can be used to describe a person.
+In our user based analysis of Body Talk, we found that the software is usable and can create models that participants find both
+resemble themselves and generates words that they semi-agreed with. While this may not sound compelling, considering how
+decisive some words may be (i.e. words such as "heavyset" or "stocky"), by having Body Talk generate words that don't necessarily
+offend or disuade users is a feat. With the improvements suggested in our Future Work section, Body Talk can continue to grow and 
+captivate the minds and spirits of users from all different backgrounds in the creation of avatars that engage and represent their
+different personalities.
 
 %% if specified like this the section will be committed in review mode
 \acknowledgments{
@@ -310,4 +349,3 @@ a grant from XYZ.}
 
 \bibliography{template}
 \end{document}
-
